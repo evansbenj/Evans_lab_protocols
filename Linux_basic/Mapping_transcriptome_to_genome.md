@@ -1,5 +1,22 @@
 # Mapping transcriptome to genome
+Different type of mapping:
+- reads (rnaseq read or genomic read) mapping to a genome
+- reads mapping to a transcriptome
+- gene sequence mapping to a genome
+- transcript sequence mapping to a genome
 
+## Mapping transcripts to a genome
+Important point to keep in mind when mapping a transcript to a genome:
+- genome contain introns, but transcripts are all exons
+- to map with splice aware aligner
+
+## Step 1, indexing before mapping
+indexing
+- the indexing step, the software will take the tropicalis genome and turn it into a format (or sometime it was called a database) that is easier for it to use later. 
+
+## step 2, mapping
+
+The way to run it in Graham:
 ```
 #!/bin/bash
 #SBATCH --nodes=1
@@ -14,5 +31,20 @@ module load nixpkgs/16.09  gcc/7.3.0
 module load gmap-gsnap/2018-07-04
 module load samtools/1.9
 
-time gmap -D /home/songxy/scratch/tropicalis_transcriptome/tropicalis_genome/db_gmap_tropicalis_v91 -d db_gmap_tropicalis_v91 -A -B 5 -t 15 -f samse /home/songxy/scratch/tropicalis_transcriptome/transcriptome_building/tropicalis_transcriptome_trinityOut.Trinity.SuperTrans.fasta | samtools view -S -b > /home/songxy/scratch/tropicalis_transcriptome/mapping_transcriptome_to_genome/tropicalis_denovoT_tropicalisv91_genome_gmap.bam
+gmap -D /home/songxy/scratch/tropicalis_transcriptome/tropicalis_genome/db_gmap_tropicalis_v91 -d db_gmap_tropicalis_v91 -A -B 5 -t 15 -f samse /home/songxy/scratch/tropicalis_transcriptome/transcriptome_building/tropicalis_transcriptome_trinityOut.Trinity.SuperTrans.fasta | samtools view -S -b > /home/songxy/scratch/tropicalis_transcriptome/mapping_transcriptome_to_genome/tropicalis_denovoT_tropicalisv91_genome_gmap.bam
 ```
+If you want to run the software on info:
+```
+gmap -D /home/xue/genome_data/tropicalis_genome/db_tropicalis_gmap -d db_tropicalis_gmap -A -B 5 -t 15 -f samse /home/xue/tropicalis_gonad_transcriptome_Dec2018/data/tropicali_gonad_transcriptome_trinityOut/tropicalis_transcriptome_build_dec2018/tropicalis_transcriptome_trinityOut.Trinity.fasta 
+```
+- 
+
+
+## Step 3, read the output file
+```
+samtools view file_name.sam (file_name.bam)
+```
+
+
+
+
