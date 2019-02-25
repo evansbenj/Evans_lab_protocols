@@ -23,6 +23,9 @@ time gmap_build -g -D /home/martin/tropicalis_genome -d XTR_indexed /home/martin
 ```
 
 ## step 2, mapping
+To find out how to do mapping, you can consult two resource
+- manual: http://research-pub.gene.com/gmap/src/README
+- do `gmap --help` on info, which will give you all the options
 
 The way to run it in Graham:
 ```
