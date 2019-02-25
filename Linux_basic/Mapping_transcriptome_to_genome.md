@@ -52,6 +52,8 @@ gmap -D /home/xue/genome_data/tropicalis_genome/db_tropicalis_gmap -d db_tropica
 
 
 ## Step 3, read the output file
+The detail description of sam (or bam) files are here `https://samtools.github.io/hts-specs/SAMv1.pdf`.
+This is how you open a sam or bam file on info. 
 ```
 samtools view tropicalis_denovoT_tropicalisv91_genome_gmap.bam |less -S
 ```
