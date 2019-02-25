@@ -11,8 +11,16 @@ Important point to keep in mind when mapping a transcript to a genome:
 - to map with splice aware aligner
 
 ## Step 1, indexing before mapping
-indexing
+To index the tropicalis genome, you need to download the genome first. The way that you can download the genome is using `wget`.
+```
+wget ftp://ftp.xenbase.org/pub/Genomics/JGI/Xentr9.1/XT9_1.fa.gz
+```
+
+indexing for GMAP
 - the indexing step, the software will take the tropicalis genome and turn it into a format (or sometime it was called a database) that is easier for it to use later. 
+```
+time gmap_build -g -D /home/martin/tropicalis_genome -d XTR_indexed /home/martin/tropicalis_genome/XT9_1.fa.gz
+```
 
 ## step 2, mapping
 
@@ -37,12 +45,12 @@ If you want to run the software on info:
 ```
 gmap -D /home/xue/genome_data/tropicalis_genome/db_tropicalis_gmap -d db_tropicalis_gmap -A -B 5 -t 15 -f samse /home/xue/tropicalis_gonad_transcriptome_Dec2018/data/tropicali_gonad_transcriptome_trinityOut/tropicalis_transcriptome_build_dec2018/tropicalis_transcriptome_trinityOut.Trinity.fasta 
 ```
-- 
+- first line of 
 
 
 ## Step 3, read the output file
 ```
-samtools view file_name.sam (file_name.bam)
+samtools view tropicalis_denovoT_tropicalisv91_genome_gmap.bam |less -S
 ```
 
 
