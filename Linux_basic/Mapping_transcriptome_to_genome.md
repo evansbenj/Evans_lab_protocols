@@ -58,6 +58,6 @@ This is how you open a sam or bam file on info.
 samtools view tropicalis_denovoT_tropicalisv91_genome_gmap.bam |less -S
 ```
 
-
+fff
 
 
