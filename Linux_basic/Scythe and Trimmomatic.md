@@ -59,7 +59,14 @@ run it like this if it is paired end
 learn how to run trimmomatic and what the command means: http://www.usadellab.org/cms/?page=trimmomatic
 
 ```
+#how Xue ran it on Xue's account
 java -jar /home/xue/Trimmomatic-0.36/trimmomatic-0.36.jar PE -phred33 -trimlog trim_out.txt /home/xue/transcriptome_data/Sample_BenEvansBJE3909cDNA_Library/BenEvansBJE3909cDNA_Library_GTGAAA_L004_R1_001.fastq.gz /home/xue/transcriptome_data/Sample_BenEvansBJE3909cDNA_Library/BenEvansBJE3909cDNA_Library_GTGAAA_L004_R2_001.fastq.gz /home/xue/transcriptome_data/BJE3909_tropicalis_trimmed_data/BenEvansBJE3909cDNA_Library_GTGAAA_L004_R1_001_paired.fastq.gz /home/xue/transcriptome_data/BJE3909_tropicalis_trimmed_data/BenEvansBJE3909cDNA_Library_GTGAAA_L004_R1_001_single.fastq.gz /home/xue/transcriptome_data/BJE3909_tropicalis_trimmed_data/BenEvansBJE3909cDNA_Library_GTGAAA_L004_R2_001_paired.fastq.gz /home/xue/transcriptome_data/BJE3909_tropicalis_trimmed_data/BenEvansBJE3909cDNA_Library_GTGAAA_L004_R2_001_single.fastq.gz ILLUMINACLIP:/home/xue/Trimmomatic-0.36/adapters/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:4:15 MINLEN:36
+
+#how you can run it on info with the jar in user/local
+java -jar /usr/local/trimmomatic-0.36.jar PE -phred33 -trimlog trim_out.txt /home/martin/tropicalis_gonad_transcriptome/raw_data/XT10_R1.fastq.gz /home/martin/tropicalis_gonad_transcriptome/raw_data/XT10_R2.fastq.gz /home/martin/tropicalis_gonad_transcriptome/test/XT10_R1_paired.fastq.gz /home/martin/tropicalis_gonad_transcriptome/test/XT10_R1_unpaired.fastq.gz /home/martin/tropicalis_gonad_transcriptome/test/XT10_R2_paired.fastq.gz 
+/home/martin/tropicalis_gonad_transcriptome/test/XT10_R2_unpaired.fastq.gz
+ILLUMINACLIP:/home/xue/Trimmomatic-0.36/adapters/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:4:15 MINLEN:36
+
 ```
 What the parameters mean:
 - LLUMINACLIP: Cut adapter and other illumina-specific sequences from the read.
