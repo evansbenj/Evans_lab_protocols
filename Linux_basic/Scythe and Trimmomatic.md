@@ -3,7 +3,13 @@ more detail about scythe: https://github.com/vsbuffalo/scythe.
 
 ## how to run Scythe
 ```
-/home/xue/software/scythe-master/scythe -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 -o /home/xue/tropicalis_gonad_transcriptome_Dec2018/raw_data/XT1_R1_scythe.fastq.gz /home/xue/tropicalis_gonad_transcriptome_Dec2018/raw_data/XT1_R1.fastq.gz
+#run scythe for XT10 R1
+/home/xue/software/scythe-master/scythe -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 -o /home/xue/tropicalis_gonad_transcriptome_Dec2018/raw_data/XT10_R1_scythe.fastq.gz /home/xue/tropicalis_gonad_transcriptome_Dec2018/raw_data/XT10_R1.fastq.g
+
+#run scythe for XT10 R2
+/home/xue/software/scythe-master/scythe -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 -o /home/xue/tropicalis_gonad_transcriptome_Dec2018/raw_data/XT10_R2_scythe.fastq.gz /home/xue/tropicalis_gonad_transcriptome_Dec2018/raw_data/XT10_R2.fastq.gz
+
+/home/xue/software/scythe-master/scythe -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 -o /home/xue/tropicalis_gonad_transcriptome_Dec2018/raw_data/XT11_R1_scythe.fastq.gz /home/xue/tropicalis_gonad_transcriptome_Dec2018/raw_data/XT11_R1.fastq.gz
 ```
 What are the parameters
 - -a: adapter file in fasta format
@@ -17,7 +23,13 @@ Other options:
 
 ## how to run Scythe on all the file with one command
 ```
+#way 1: output file name would be like XT10_R1_scythe.fastq.gz
+
 for i in *fastq.gz ; do name=$(grep -o "XT[0-9]*_[A-Z][0-9]" <(echo $i)); /home/xue/software/scythe-master/scythe -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/xue/tropicalis_gonad_transcriptome_Dec2018/scythed_data/$name\_scythe.fastq.gz; done
+
+#way two: output file name would be like XT10_R1.fastq.gz; you can do this but make sure the output folder is different from the input folder, otherwise the old file will be overwritten 
+
+for i in *fastq.gz; do /home/xue/software/scythe-master/scythe -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 -o /home/xue/tropicalis_gonad_transcriptome_Dec2018/scythed_data/$i $i | gzip > ; done
 ```
 
 # Trimmomatic 
