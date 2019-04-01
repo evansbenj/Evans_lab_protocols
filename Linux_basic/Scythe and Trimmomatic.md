@@ -78,6 +78,4 @@ What the parameters mean:
 - TOPHRED64: Convert quality scores to Phred-64
 
 
-```
-ls | wc -l
-```
+
