@@ -79,5 +79,5 @@ What the parameters mean:
 
 
 ```
-ls wc -l
+ls | wc -l
 ```
