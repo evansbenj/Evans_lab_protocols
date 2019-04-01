@@ -76,3 +76,8 @@ What the parameters mean:
 - MINLEN: Drop the read if it is below a specified length
 - TOPHRED33: Convert quality scores to Phred-33
 - TOPHRED64: Convert quality scores to Phred-64
+
+
+```
+ls wc -l
+```
