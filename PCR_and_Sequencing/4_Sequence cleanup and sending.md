@@ -4,7 +4,7 @@ To clean the PRC product that have been went through the Big-dye sequencing reac
 
 ### Slurry mix
 For one plate
-- sephadex: 1.25g
+- sephadex G50 Fine: 1.25g
 - ddH2O: 20ul
 
 ### Protocol
