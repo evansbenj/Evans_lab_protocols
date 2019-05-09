@@ -38,8 +38,8 @@ Information we filled for our typical orders:
   - non-human
   - contact emai: Ben's
   - plate label: plate#_date (ex, plate1_nov14_2017)
-  - fill the excel file and upload
-    - 
+  - download the template excel file and fill the second column with **sequence #** from the sequencing book
+    - must have the same format as the template otherwise it might not be uploaded 
   - check the sample numbers are right
 - second page - purchasing information
   - charge type: credit
