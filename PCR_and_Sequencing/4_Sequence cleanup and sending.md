@@ -15,15 +15,15 @@ Spin for 2 min at 1500 RPM
 
 Immediately add all sequence reaction (12 ul) to the sephadex column (smaller one, where sephadex remained)
 
-Place sephadex plate over a sequence plate (shelf next to the window, check if the order of samples correspond to order on sequence plate and tape it
+Place sephadex plate over a sequence plate (shelf next to the window, check if the order of samples correspond to order on sequence plate and tape it)
 
 Spin for 2 min at 1500 RPM
 
-Sequence reactions are clean. Cover by plastic lid (shelf next to the window), mark by order number, wrap by paper towel, fix by tape, put into plastic bag 
+Sequence reactions are clean. Cover the wells with by plastic lid (shelf next to the window), write down **order number** on the side of the plate, wrap by paper towel, fix by tapes
 
 Fill the FedEx form, place into the smaller plastic bag and place on the bigger plastic bag.
 
-Also, see the protocol in the orange folder. 
+Also, see the paper copy of this protocol in the orange folder. 
 
 
 # Submitting forms for TCAG DNA Sequencing Facility
