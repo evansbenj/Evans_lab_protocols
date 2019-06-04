@@ -42,7 +42,7 @@ Information we filled for our typical orders:
     - must have the same format as the template otherwise it might not be uploaded 
   - check the sample numbers are right
 - second page - purchasing information
-  - charge type: credit
+  - charge type: credit card or cheque
   - address: full address of mcmaster undersity and our office in LSB
   - charge code: check google drive for charge code
 
