@@ -1,4 +1,4 @@
-# Sephex - sequence cleanup
+# Sephadex - sequence cleanup
 ### Purpose
 To clean the PRC product that have been went through the Big-dye sequencing reaction. 
 
