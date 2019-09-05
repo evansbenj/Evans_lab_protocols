@@ -24,6 +24,7 @@ Useful notes:
  
  **different size 1% gel**
  | |small gel|Big full|big half|
+ | ------------- | ------------- |------------- | ------------- |
  |Agarose|1g|2.5g|1.75g|
  |TBE|100mL|250mL|175ml|
  |EtBr|3uL|7uL|5uL|
