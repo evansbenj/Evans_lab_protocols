@@ -23,6 +23,7 @@ Useful notes:
     - In the tip box, always start with the first tips of a row so that you know which PCR tube you are at. 
  
  **different size 1% gel**
+ 
  | Mixture | small gel | Big full | big half |
  | ------------- | ------------- |------------- | ------------- |
  | Agarose | 1g | 2.5g | 1.75g |
