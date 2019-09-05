@@ -22,13 +22,6 @@ Useful notes:
     - In the tray holding the extracted DNA samples, move the one that you are done with one space up so that you know it is done.
     - In the tip box, always start with the first tips of a row so that you know which PCR tube you are at. 
  
- **different size 1% gel**
- 
- | Mixture | small gel | Big full | big half |
- | ------------- | ------------- |------------- | ------------- |
- | Agarose | 1g | 2.5g | 1.75g |
- | TBE | 100mL | 250mL | 175ml |
- | EtBr | 3uL | 7uL | 5uL |
  
 ### Running PCR reaction
 1. Turn on the Mastercycler machine. Login with the user name and password provided on the sticker note. 
@@ -58,6 +51,15 @@ Load on negative (black) side because DNA is negatively charged.  Run at 100 mA 
 6. Add 3ul of Ethidium Bromide.
 7. Set up the gel tray with desired combs and pour the mixture.
 8. Wait for the gel to solify. Take out the comb. 
+
+**different size 1% gel**
+ 
+ | Mixture | small gel | Big full | big half |
+ | ------------- | ------------- |------------- | ------------- |
+ | Agarose | 1g | 2.5g | 1.75g |
+ | TBE | 100mL | 250mL | 175ml |
+ | EtBr | 3uL | 7uL | 5uL |
+
 
 ### Running a gel
 1. Put a paper towel on the counter. Put the tray containing the gel on the paper towel.
