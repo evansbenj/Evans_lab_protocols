@@ -22,6 +22,12 @@ Useful notes:
     - In the tray holding the extracted DNA samples, move the one that you are done with one space up so that you know it is done.
     - In the tip box, always start with the first tips of a row so that you know which PCR tube you are at. 
  
+ **different size 1% gel**
+ | |small gel|Big full|big half|
+ |Agarose|1g|2.5g|1.75g|
+ |TBE|100mL|250mL|175ml|
+ |EtBr|3uL|7uL|5uL|
+ 
 ### Running PCR reaction
 1. Turn on the Mastercycler machine. Login with the user name and password provided on the sticker note. 
 2. Put the PCR tubes into the wells. Close the lip firmly. 
